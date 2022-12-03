@@ -10,17 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./img/icons/letter-m.png" type="image/x-icon">
     <title>Maryna Yefimenko</title>
-    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="../dist/output.css">
 </head>
 
 <body class="bg-light text-dark">
     <header class="container max-w-6xl mx-auto flex pt-10 font-medium text-grdark">
 
         <nav class="flex text-l text-lg w-1/2 space-x-10 ">
-            <a href="#" class="hover:text-black hover:font-semibold">Home</a>
-            <a href="#" class="hover:text-black hover:font-semibold">About me</a>
-            <a href="#" class="hover:text-black hover:font-semibold">Projects</a>
-            <a href="#" class="hover:text-black hover:font-semibold">Contacts</a>
+            <a href="#" class="nav-link text-black font-semibold">Home</a>
+            <a href="#" class="nav-link hover:text-black hover:font-semibold">About me</a>
+            <a href="#" class="nav-link hover:text-black hover:font-semibold">Projects</a>
+            <a href="#" class="nav-link hover:text-black hover:font-semibold">Contacts</a>
         </nav>
         <div class="flex w-1/2 justify-end space-x-5">
             <a href="https://www.facebook.com/" class="social__item" id="fb" target="_blank">
@@ -50,7 +50,7 @@
         </div>
     </header>
     <main>
-        <div class="container max-w-6xl mx-auto flex">
+        <section class="container max-w-6xl mx-auto flex">
             <div class="w-1/2 flex justify-center items-center">
                 <div class="text-3xl font-semibold leading-40">
                     <div class="hi">- Hi, I am</div>
@@ -61,13 +61,13 @@
             <div class="w-1/2 mt-24 mb-36 text-center">
                 <img class="block mx-auto" src="/src/img/me.jpg" alt="me">
             </div>
-        </div>
+        </section>
         <div class="design relative">
             <img class="design__item absolute -bottom-72 -left-40" src="../src/img/design/intro1.png" alt="design">
             <img class="design__item absolute right-0 bottom-72" src="../src/img/design/intro2.png" alt="design">
             <img class="design__item absolute right-0 top-20" src="../src/img/design/about2.png" alt="design">
         </div>
-        <div class="bg-dark text-light py-32 text-xl">
+        <section id="about" class="bg-dark text-light py-32 text-xl">
             <div class="container  max-w-6xl mx-auto">
                 <h2 class="text-center mb-24 text-4xl">About me</h2>
                 <div class="flex">
@@ -85,7 +85,7 @@
                                 JavaScript<br>
                                 React<br>
                                 TypeScript<br>
-                                Redux<br>
+                                Git<br>
                                 npm
                             </div>
                         </div>
@@ -105,16 +105,24 @@
                         <br>I like to bring the real benefit with my work.</div>
                 </div>
             </div>
-        </div>
+        </section>
         <div class="design relative">
             <img class="design__item absolute right-1/2 -top-32" src="../src/img/design/3.png" alt="design">
             <img class="design__item absolute right-0 -top-24 -z-10" src="../src/img/design/projects1.png" alt="design">
         </div>
-        <div class="container max-w-6xl mx-auto">
+        <section id="projects" class="container max-w-6xl mx-auto">
             <h2 class="text-center my-24 text-4xl font-semibold">Projects</h2>
             <div class="grid grid-cols-3 grid-rows-2 gap-16 font-medium text-xl mb-28">
                 <div class="item">
-                    <img src="./img/activeBox.jpg" alt="active box">
+                    <a href="/"><img class="hover:translate-y-1" src="./img/marvel.jpg" alt="marvel-inform-portal"></a>
+                    <div class="name mt-8 font-extrabold">Marvel information portal</div>
+                    <div class="tech">React, Bootstrap</div>
+                    <div class="h-0.5 w-10 my-3 bg-dark"> </div>
+                    <a href="/" class="inline-block pr-4 text-grdark hover:text-dark hover:font-bold">View</a>
+                    <a href="/" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
+                </div>
+                <div class="item">
+                    <a href="/"><img class="hover:translate-y-1" src="./img/activeBox.jpg" alt="active box"></a>
                     <div class="name mt-8 font-extrabold">Webpage of
                         marketing agency</div>
                     <div class="tech">HTML, CSS, TypeScript</div>
@@ -123,16 +131,7 @@
                     <a href="/" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
                 </div>
                 <div class="item">
-                    <img src="./img/mogo.jpg" alt="mogo">
-                    <div class="name mt-8 font-extrabold">Creative agency
-                        webpage</div>
-                    <div class="tech">HTML, CSS, JavaScript</div>
-                    <div class="h-0.5 w-10 my-3 bg-dark"> </div>
-                    <a href="/" class="inline-block pr-4 text-grdark hover:text-dark hover:font-bold">View</a>
-                    <a href="/" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
-                </div>
-                <div class="item">
-                    <img src="./img/restaurant.jpg" alt="restaurant">
+                    <a href="/"><img class="hover:translate-y-1" src="./img/restaurant.jpg" alt="restaurant"></a>
                     <div class="name mt-8 font-extrabold">Classic restaurant
                         site</div>
                     <div class="tech">HTML, SCSS, JavaScript</div>
@@ -141,15 +140,7 @@
                     <a href="/" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
                 </div>
                 <div class="item">
-                    <img src="./img/timer.jpg" alt="timer">
-                    <div class="name mt-8 font-extrabold">New Year Timer</div>
-                    <div class="tech">HTML, CSS, JavaScript</div>
-                    <div class="h-0.5 w-10 my-3 bg-dark"> </div>
-                    <a href="/" class="inline-block pr-4 text-grdark hover:text-dark hover:font-bold">View</a>
-                    <a href="/" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
-                </div>
-                <div class="item">
-                    <img src="./img/taxes.jpg" alt="tax calculator">
+                    <a href="/"><img class="hover:translate-y-1" src="./img/taxes.jpg" alt="tax calculator"></a>
                     <div class="name mt-8 font-extrabold">Belgium tax
                         calculator</div>
                     <div class="tech">HTML, CSS, JavaScript</div>
@@ -158,16 +149,23 @@
                     <a href="/" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
                 </div>
                 <div class="item">
-                    <img src="./img/hotel1.jpg" alt="hotel">
-                    <div class="name mt-8 font-extrabold">Luxury hotel
+                    <a href="/"><img class="hover:translate-y-1" src="./img/mogo.jpg" alt="mogo"></a>
+                    <div class="name mt-8 font-extrabold">Creative agency
                         webpage</div>
-                    <div class="tech">HTML, TailWindCSS, JavaScript</div>
+                    <div class="tech">HTML, CSS, JavaScript</div>
                     <div class="h-0.5 w-10 my-3 bg-dark"> </div>
-                    <div class="inline-block pr-4 text-grdark">Coming soon...
-                    </div>
+                    <a href="/" class="inline-block pr-4 text-grdark hover:text-dark hover:font-bold">View</a>
+                    <a href="/" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
+                </div>
+                <div class="item">
+                    <img src="./img/news.jpg" alt="news website">
+                    <div class="name mt-8 font-extrabold">All news website</div>
+                    <div class="tech">React, Bootstrap</div>
+                    <div class="h-0.5 w-10 my-3 bg-dark"> </div>
+                        <a href="/" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <div class="design relative">
         <img class="design__item absolute left-0 -top-40" src="../src/img/design/projects3.png" alt="design">
@@ -220,6 +218,7 @@
         </div>
     </footer>
 
+    <script src="./script.js"></script>
 </body>
 
 </html>
