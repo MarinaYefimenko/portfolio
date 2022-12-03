@@ -8,22 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./img/icons/letter-m.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/img/icons/letter-m.png" type="image/x-icon">
     <title>Maryna Yefimenko</title>
     <link rel="stylesheet" href="./dist/output.css">
 </head>
 
 <body class="bg-light text-dark">
-    <header class="container max-w-6xl mx-auto flex pt-10 font-medium text-grdark">
+    <header class="container  px-3 xl:px-0 max-w-6xl mx-auto flex pt-10 pb-10 md:pb-0 font-medium text-grdark">
 
-        <nav class="flex text-l text-lg w-1/2 space-x-10 ">
+        <nav class="flex text-l text-lg w-2/3 lg:w-1/2 space-x-10 hidden md:block">
             <a href="#" class="nav-link text-black font-semibold">Home</a>
             <a href="#" class="nav-link hover:text-black hover:font-semibold">About me</a>
             <a href="#" class="nav-link hover:text-black hover:font-semibold">Projects</a>
             <a href="#" class="nav-link hover:text-black hover:font-semibold">Contacts</a>
         </nav>
-        <div class="flex w-1/2 justify-end space-x-5">
-            <a href="https://www.facebook.com/" class="social__item" id="fb" target="_blank">
+        <div class="flex w-1/2 md:justify-end space-x-5">
+            <a href="https://www.facebook.com/profile.php?id=100030448928492" class="social__item" id="fb" target="_blank">
                 <svg class="social__icon fill-dark hover:fill-grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     width="30" height="30" viewBox="0 0 24 24">
                     <path
@@ -31,7 +31,7 @@
                     </path>
                 </svg>
             </a>
-            <a href="https://www.github.com/" class="social__item" id="github" target="_blank">
+            <a href="https://github.com/MarinaYefimenko" class="social__item" id="github" target="_blank">
                 <svg class="social__icon fill-dark hover:fill-grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     width="30" height="30" viewBox="0 0 24 24">
                     <path
@@ -39,7 +39,7 @@
                     </path>
                 </svg>
             </a>
-            <a href="https://www.linkedin.com/" class="social__item" id="linkedin" target="_blank">
+            <a href="https://linkedin.com/in/maryna-yefimenko-342189252" class="social__item" id="linkedin" target="_blank">
                 <svg class="social__icon fill-dark hover:fill-grey" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     width="30" height="30" viewBox="0 0 24 24">
                     <path
@@ -50,28 +50,28 @@
         </div>
     </header>
     <main>
-        <section class="container max-w-6xl mx-auto flex">
-            <div class="w-1/2 flex justify-center items-center">
+        <section class="container px-3 xl:px-0 max-w-6xl mx-auto md:flex">
+            <div class="md:w-1/2 my-10 md:my-0 flex justify-center items-center">
                 <div class="text-3xl font-semibold leading-40">
                     <div class="hi">- Hi, I am</div>
-                    <h1 class="text-5xl font-extrabold">Maryna Yefimenko</h1>
+                    <h1 class="text-4xl md:text-5xl font-extrabold">Maryna Yefimenko</h1>
                     <div class="mt-4">Web Developer</div>
                 </div>
             </div>
-            <div class="w-1/2 mt-24 mb-36 text-center">
-                <img class="block mx-auto" src="./src/img/me.jpg" alt="me">
+            <div class="md:w-1/2 my-20 md:mt-24 md:mb-36 text-center">
+                <img class="block mx-auto rounded-lg shadow-xl" src="./src/img/me.jpg" alt="me">
             </div>
         </section>
         <div class="design relative">
             <img class="design__item absolute -bottom-72 -left-40" src="./src/img/design/intro1.png" alt="design">
-            <img class="design__item absolute right-0 bottom-72" src="./src/img/design/intro2.png" alt="design">
-            <img class="design__item absolute right-0 top-20" src="./src/img/design/about2.png" alt="design">
+            <img class="design__item absolute right-0 bottom-64 xl:bottom-72 -z-10" src="./src/img/design/intro2.png" alt="design">
+            <img class="design__item absolute right-0 top-20 hidden md:block" src="./src/img/design/about2.png" alt="design">
         </div>
-        <section id="about" class="bg-dark text-light py-32 text-xl">
-            <div class="container  max-w-6xl mx-auto">
-                <h2 class="text-center mb-24 text-4xl">About me</h2>
-                <div class="flex">
-                    <div class="w-1/2 flex flex-col content-between">
+        <section id="about" class="bg-dark text-light py-16 md:py-32 text-xl">
+            <div class="container  px-3 xl:px-0 max-w-6xl mx-auto">
+                <h2 class="text-center mb-12 md:mb-24 text-4xl">About me</h2>
+                <div class="md:flex">
+                    <div class="md:w-1/2 flex flex-col content-between">
                         <h3 class="text-center text-3xl mb-8">Main skills</h3>
                         <div class="flex mb-16">
                             <div class="w-1/2 text-2xl leading-relaxed text-right pr-8">
@@ -81,7 +81,7 @@
                                 TailWindCSS<br>
                                 Bootstrap
                             </div>
-                            <div class="w-1/2 text-2xl leading-relaxed pl-8">
+                            <div class="md:w-1/2 text-2xl leading-relaxed pl-8">
                                 JavaScript<br>
                                 React<br>
                                 TypeScript<br>
@@ -89,11 +89,13 @@
                                 npm
                             </div>
                         </div>
+                        <a target="_blank" href="https://docs.google.com/document/d/1KZMdo9yZ8W0fnxehHahBRRXhU5XIPoCX5auNfJXEQZM/edit?usp=sharing" 
+                        class="mx-auto block pb-16 md:pb-0">
                         <button
-                            class="border-solid rounded border-2 border-light py-2 px-10 mx-auto block hover:bg-light hover:text-dark hover:font-bold">Download
-                            CV</button>
+                            class="py-2 px-10 border-solid rounded border-2 border-light hover:bg-light hover:text-dark hover:font-bold">Download
+                            CV</button></a>
                     </div>
-                    <div class="w-1/2 leading-10 pl-12">I like developing web pages.
+                    <div class="md:w-1/2 leading-10 pl-12 pr-8 md:pr-0">I like developing web pages.
                         <br>I like working with different technologies.
                         <br>I like that in IT you can solve one problem in dozens of ways and choose the most suitable
                         one.
@@ -107,77 +109,77 @@
             </div>
         </section>
         <div class="design relative">
-            <img class="design__item absolute right-1/2 -top-32" src="./src/img/design/3.png" alt="design">
+            <img class="design__item absolute right-1/3 xl:right-1/2 -top-40 lg:-top-32 hidden md:block" src="./src/img/design/3.png" alt="design">
             <img class="design__item absolute right-0 -top-24 -z-10" src="./src/img/design/projects1.png" alt="design">
         </div>
-        <section id="projects" class="container max-w-6xl mx-auto">
-            <h2 class="text-center my-24 text-4xl font-semibold">Projects</h2>
-            <div class="grid grid-cols-3 grid-rows-2 gap-16 font-medium text-xl mb-28">
-                <div class="item">
-                    <a href="/"><img class="hover:translate-y-1" src="./src/img/marvel.jpg" alt="marvel-inform-portal"></a>
+        <section id="projects" class="container  px-3 xl:px-0 max-w-6xl mx-auto">
+            <h2 class="text-center my-10 md:my-24 text-4xl font-semibold">Projects</h2>
+            <div class="sm:grid grid-cols-2 lg:grid-cols-3 grid-rows-3 lg:grid-rows-2 gap-16 font-medium text-xl mb-28">
+                <div class="item pb-10 md:pb-0 pl-8 sm:pl-0">
+                    <a target="_blank" href="https://marinayefimenko.github.io/marvel-inform-portal/#/"><img class="rounded-md shadow-xl hover:translate-y-1" src="./src/img/marvel.jpg" alt="marvel-inform-portal"></a>
                     <div class="name mt-8 font-extrabold">Marvel information portal</div>
                     <div class="tech">React, Bootstrap</div>
                     <div class="h-0.5 w-10 my-3 bg-dark"> </div>
-                    <a href="/" class="inline-block pr-4 text-grdark hover:text-dark hover:font-bold">View</a>
-                    <a href="/" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
+                    <a target="_blank" href="https://marinayefimenko.github.io/marvel-inform-portal/#/" class="inline-block pr-4 text-grdark hover:text-dark hover:font-bold">View</a>
+                    <a target="_blank" href="https://github.com/MarinaYefimenko/marvel-inform-portal" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
                 </div>
-                <div class="item">
-                    <a href="/"><img class="hover:translate-y-1" src="./src/img/activeBox.jpg" alt="active box"></a>
+                <div class="item pb-10 md:pb-0 pl-8 sm:pl-0">
+                    <a target="_blank" href="https://marinayefimenko.github.io/Active-Box-site/"><img class="rounded-md shadow-xl hover:translate-y-1" src="./src/img/activeBox.jpg" alt="active box"></a>
                     <div class="name mt-8 font-extrabold">Webpage of
                         marketing agency</div>
                     <div class="tech">HTML, CSS, TypeScript</div>
                     <div class="h-0.5 w-10 my-3 bg-dark"> </div>
-                    <a href="/" class="inline-block pr-4 text-grdark hover:text-dark hover:font-bold">View</a>
-                    <a href="/" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
+                    <a target="_blank" href="https://marinayefimenko.github.io/Active-Box-site/" class="inline-block pr-4 text-grdark hover:text-dark hover:font-bold">View</a>
+                    <a target="_blank" href="https://github.com/MarinaYefimenko/Active-Box-site" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
                 </div>
-                <div class="item">
-                    <a href="/"><img class="hover:translate-y-1" src="./src/img/restaurant.jpg" alt="restaurant"></a>
+                <div class="item pb-10 md:pb-0 pl-8 sm:pl-0">
+                    <a target="_blank" href="https://marinayefimenko.github.io/restaurant-site/"><img class="rounded-md shadow-xl hover:translate-y-1" src="./src/img/restaurant.jpg" alt="restaurant"></a>
                     <div class="name mt-8 font-extrabold">Classic restaurant
                         site</div>
                     <div class="tech">HTML, SCSS, JavaScript</div>
                     <div class="h-0.5 w-10 my-3 bg-dark"> </div>
-                    <a href="/" class="inline-block pr-4 text-grdark hover:text-dark hover:font-bold">View</a>
-                    <a href="/" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
+                    <a target="_blank" href="https://marinayefimenko.github.io/restaurant-site/" class="inline-block pr-4 text-grdark hover:text-dark hover:font-bold">View</a>
+                    <a target="_blank" href="https://github.com/MarinaYefimenko/restaurant-site" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
                 </div>
-                <div class="item">
-                    <a href="/"><img class="hover:translate-y-1" src="./src/img/taxes.jpg" alt="tax calculator"></a>
+                <div class="item pb-10 md:pb-0 pl-8 sm:pl-0">
+                    <a target="_blank" href="https://marinayefimenko.github.io/Belgium-tax-calculator/"><img class="rounded-md shadow-xl hover:translate-y-1" src="./src/img/taxes.jpg" alt="tax calculator"></a>
                     <div class="name mt-8 font-extrabold">Belgium tax
                         calculator</div>
                     <div class="tech">HTML, CSS, JavaScript</div>
                     <div class="h-0.5 w-10 my-3 bg-dark"> </div>
-                    <a href="/" class="inline-block pr-4 text-grdark hover:text-dark hover:font-bold">View</a>
-                    <a href="/" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
+                    <a target="_blank" href="https://marinayefimenko.github.io/Belgium-tax-calculator/" class="inline-block pr-4 text-grdark hover:text-dark hover:font-bold z-10">View</a>
+                    <a target="_blank" href="https://github.com/MarinaYefimenko/Belgium-tax-calculator" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
                 </div>
-                <div class="item">
-                    <a href="/"><img class="hover:translate-y-1" src="./src/img/mogo.jpg" alt="mogo"></a>
+                <div class="item pb-10 md:pb-0 pl-8 sm:pl-0">
+                    <a target="_blank" href="https://marinayefimenko.github.io/MoGo-creative-agency/"><img class="rounded-md shadow-xl hover:translate-y-1" src="./src/img/mogo.jpg" alt="mogo"></a>
                     <div class="name mt-8 font-extrabold">Creative agency
                         webpage</div>
                     <div class="tech">HTML, CSS, JavaScript</div>
                     <div class="h-0.5 w-10 my-3 bg-dark"> </div>
-                    <a href="/" class="inline-block pr-4 text-grdark hover:text-dark hover:font-bold">View</a>
-                    <a href="/" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
+                    <a target="_blank" href="https://marinayefimenko.github.io/MoGo-creative-agency/" class="inline-block pr-4 text-grdark hover:text-dark hover:font-bold">View</a>
+                    <a target="_blank" href="https://github.com/MarinaYefimenko/MoGo-creative-agency" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
                 </div>
-                <div class="item">
-                    <img src="./src/img/news.jpg" alt="news website">
+                <div class="item pb-10 md:pb-0 pl-8 sm:pl-0">
+                    <img class="rounded-md shadow-xl" src="./src/img/news.jpg" alt="news website">
                     <div class="name mt-8 font-extrabold">All news website</div>
                     <div class="tech">React, Bootstrap</div>
                     <div class="h-0.5 w-10 my-3 bg-dark"> </div>
-                        <a href="/" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
+                        <a target="_blank" href="https://github.com/MarinaYefimenko/ALL-News" class="inline-block text-grdark hover:text-dark hover:font-bold">Sources</a>
                 </div>
             </div>
         </section>
     </main>
     <div class="design relative">
-        <img class="design__item absolute left-0 -top-40" src="./src/img/design/projects3.png" alt="design">
-        <img class="design__item absolute right-0 -top-44" src="./src/img/design/footer.png" alt="design">
+        <img class="design__item absolute -left-14 xl:left-0 -top-12 xl:-top-24 hidden lg:block" src="./src/img/design/projects3.png" alt="design">
+        <img class="design__item absolute right-0 -top-44 hidden 2xl:block" src="./src/img/design/footer.png" alt="design">
     </div>
     <footer class="bg-grey">
-        <div class="container max-w-6xl mx-auto flex py-24">
-            <div class="w-1/2">
+        <div class="container px-3 xl:px-0 max-w-6xl mx-auto md:flex py-10 md:py-24">
+            <div class="md:w-1/2">
                 <div class="my-6">
                     <h3 class="text-center text-3xl mb-8 font-semibold">Let`s stay in touch:</h3>
                 <div class="flex justify-center space-x-5">
-                    <a href="https://www.facebook.com/" class="social__item" id="fb" target="_blank">
+                    <a href="https://www.facebook.com/profile.php?id=100030448928492" class="social__item" id="fb" target="_blank">
                         <svg class="social__icon fill-dark hover:fill-light" xmlns="http://www.w3.org/2000/svg" x="0px"
                             y="0px" width="30" height="30" viewBox="0 0 24 24">
                             <path
@@ -185,7 +187,7 @@
                             </path>
                         </svg>
                     </a>
-                    <a href="https://www.github.com/" class="social__item" id="github" target="_blank">
+                    <a href="https://github.com/MarinaYefimenko" class="social__item" id="github" target="_blank">
                         <svg class="social__icon fill-dark hover:fill-light" xmlns="http://www.w3.org/2000/svg" x="0px"
                             y="0px" width="30" height="30" viewBox="0 0 24 24">
                             <path
@@ -193,7 +195,7 @@
                             </path>
                         </svg>
                     </a>
-                    <a href="https://www.linkedin.com/" class="social__item" id="linkedin" target="_blank">
+                    <a href="https://linkedin.com/in/maryna-yefimenko-342189252" class="social__item" id="linkedin" target="_blank">
                         <svg class="social__icon fill-dark hover:fill-light" xmlns="http://www.w3.org/2000/svg" x="0px"
                             y="0px" width="30" height="30" viewBox="0 0 24 24">
                             <path
@@ -204,7 +206,7 @@
                 </div>
                 </div>
             </div>
-            <div class="contacts w-1/2 flex flex-col pl-12">
+            <div class="contacts md:w-1/2 flex flex-col pl-12">
                 <a href="tel:+380660677100" class="mb-4 hover:text-light"><img class="w-6 h-6 inline" src="./src/img/icons/whatsapp.png" alt="">
                     <span class="pl-4">+380660677100</span></a>
                 <a href="tel:+32494711540" class="mb-4  hover:text-light"><img class="w-6 h-6 inline" src="./src/img/icons/call.png" alt="">
@@ -218,7 +220,7 @@
         </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./src/script.js"></script>
 </body>
 
 </html>
