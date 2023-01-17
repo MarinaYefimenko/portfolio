@@ -705,10 +705,6 @@ html {
   top: -3rem;
 }
 
-.-top-44 {
-  top: -11rem;
-}
-
 .-top-20 {
   top: -5rem;
 }
@@ -810,6 +806,10 @@ html {
   margin-top: 2rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -820,10 +820,6 @@ html {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-1 {
-  margin-top: 0.25rem;
 }
 
 .box-border {
@@ -2007,6 +2003,21 @@ html {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .pt-10 {
