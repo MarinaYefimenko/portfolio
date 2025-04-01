@@ -721,6 +721,10 @@ html {
   margin-top: 2rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1002,6 +1006,11 @@ html {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-3xl\/7 {
+  font-size: 1.875rem;
+  line-height: 1.75rem;
 }
 
 .font-extrabold {
